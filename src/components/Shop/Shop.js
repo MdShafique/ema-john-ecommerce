@@ -58,8 +58,8 @@ const Shop = () => {
                 placeholder='Search Product'/>
             </div>
             <div className='shop-container'>
-            <div className='product-container'>
-                {
+                <div className='product-container'>
+                    {
                     displayProducts.map(product=> <Product 
                         key={product.key}
                         product={product}
@@ -67,12 +67,12 @@ const Shop = () => {
                         >
 
                         </Product>)
-                }
-            </div>
+                    }
+                </div>
                 <div className='cart-container'>
-                <Cart cart={cart}></Cart>
-            </div> 
-        </div>
+                    <Cart cart={cart}></Cart>
+                </div> 
+            </div>
         </>
     );
 };
